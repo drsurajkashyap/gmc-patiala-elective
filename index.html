@@ -1,1804 +1,199 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <title>
-    Electives Counselling Portal |
-    Government Medical College, Patiala
-  </title>
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b6d">
+  <meta name="description" content="Government Medical College, Patiala — MBBS Final Year Electives Counselling Portal">
+  <title>GMC Patiala | MBBS Electives Counselling</title>
   <style>
-
-
-    /* =========================================
-       RESET
-    ========================================= */
-
-    * {
-
-      box-sizing:
-        border-box;
-
-      margin:
-        0;
-
-      padding:
-        0;
-
+    :root {
+      --blue:#123b6d;--blue2:#1d5b96;--blue3:#eaf3fb;--green:#1f7a4c;--greenBg:#eaf7f0;
+      --amber:#a06100;--amberBg:#fff6df;--text:#1d2a38;--muted:#66758a;--border:#dce5ee;
+      --bg:#f5f8fb;--card:#fff;--shadow:0 10px 32px rgba(18,59,109,.10);
     }
-
-
-    html {
-
-      scroll-behavior:
-        smooth;
-
-    }
-
-
-    body {
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      background:
-        #f4f7fb;
-
-      color:
-        #1f2937;
-
-      line-height:
-        1.6;
-
-    }
-
-
-
-    /* =========================================
-       HEADER
-    ========================================= */
-
-    header {
-
-      background:
-        linear-gradient(
-          135deg,
-          #12355b,
-          #1f5f8b
-        );
-
-      color:
-        white;
-
-      padding:
-        16px 24px;
-
-      position:
-        sticky;
-
-      top:
-        0;
-
-      z-index:
-        1000;
-
-      box-shadow:
-        0 2px 10px
-        rgba(
-          0,
-          0,
-          0,
-          0.15
-        );
-
-    }
-
-
-    .header-container {
-
-      max-width:
-        1200px;
-
-      margin:
-        auto;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        space-between;
-
-      gap:
-        20px;
-
-    }
-
-
-    .header-brand {
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      gap:
-        14px;
-
-    }
-
-
-    .header-logo {
-
-      width:
-        54px;
-
-      height:
-        54px;
-
-      object-fit:
-        contain;
-
-      background:
-        white;
-
-      border-radius:
-        50%;
-
-      padding:
-        3px;
-
-    }
-
-
-    .header-text h1 {
-
-      font-size:
-        20px;
-
-      line-height:
-        1.2;
-
-      font-weight:
-        700;
-
-    }
-
-
-    .header-text p {
-
-      font-size:
-        13px;
-
-      opacity:
-        0.85;
-
-      margin-top:
-        3px;
-
-    }
-
-
-    .header-nav {
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      gap:
-        18px;
-
-    }
-
-
-    .header-nav a {
-
-      color:
-        white;
-
-      text-decoration:
-        none;
-
-      font-size:
-        14px;
-
-      font-weight:
-        600;
-
-      opacity:
-        0.9;
-
-      transition:
-        0.2s;
-
-    }
-
-
-    .header-nav a:hover {
-
-      opacity:
-        1;
-
-    }
-
-
-
-    /* =========================================
-       HERO
-    ========================================= */
-
-    .hero {
-
-      background:
-        linear-gradient(
-          135deg,
-          #eef5fb,
-          #ffffff
-        );
-
-      padding:
-        70px 20px
-        80px;
-
-      border-bottom:
-        1px solid
-        #dce5ee;
-
-    }
-
-
-    .hero-container {
-
-      max-width:
-        1000px;
-
-      margin:
-        auto;
-
-      text-align:
-        center;
-
-    }
-
-
-    .hero-logo {
-
-      width:
-        180px;
-
-      max-width:
-        55%;
-
-      height:
-        auto;
-
-      margin-bottom:
-        24px;
-
-    }
-
-
-    .institution-name {
-
-      font-size:
-        20px;
-
-      color:
-        #38526d;
-
-      font-weight:
-        600;
-
-      margin-bottom:
-        12px;
-
-    }
-
-
-    .hero h2 {
-
-      font-size:
-        46px;
-
-      color:
-        #12355b;
-
-      line-height:
-        1.15;
-
-      margin-bottom:
-        16px;
-
-    }
-
-
-    .hero-subtitle {
-
-      font-size:
-        21px;
-
-      color:
-        #50657a;
-
-      max-width:
-        750px;
-
-      margin:
-        auto;
-
-    }
-
-
-    .committee-box {
-
-      display:
-        inline-block;
-
-      margin-top:
-        28px;
-
-      padding:
-        12px 22px;
-
-      background:
-        #e5eef6;
-
-      color:
-        #12355b;
-
-      border-radius:
-        8px;
-
-      font-weight:
-        700;
-
-      font-size:
-        16px;
-
-    }
-
-
-    .committee-box span {
-
-      display:
-        block;
-
-      font-size:
-        13px;
-
-      font-weight:
-        500;
-
-      margin-top:
-        3px;
-
-    }
-
-
-
-    /* =========================================
-       ACTION SECTION
-    ========================================= */
-
-    .actions {
-
-      max-width:
-        1050px;
-
-      margin:
-        -35px auto 0;
-
-      padding:
-        0 20px;
-
-      position:
-        relative;
-
-      z-index:
-        10;
-
-    }
-
-
-    .action-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          2,
-          minmax(
-            0,
-            1fr
-          )
-        );
-
-      gap:
-        25px;
-
-    }
-
-
-    .action-card {
-
-      background:
-        white;
-
-      border-radius:
-        14px;
-
-      padding:
-        38px;
-
-      box-shadow:
-        0 8px 30px
-        rgba(
-          30,
-          60,
-          90,
-          0.12
-        );
-
-      border:
-        1px solid
-        #e2e8f0;
-
-      text-align:
-        center;
-
-      transition:
-        transform 0.2s,
-        box-shadow 0.2s;
-
-    }
-
-
-    .action-card:hover {
-
-      transform:
-        translateY(
-          -4px
-        );
-
-      box-shadow:
-        0 14px 38px
-        rgba(
-          30,
-          60,
-          90,
-          0.17
-        );
-
-    }
-
-
-    .action-icon {
-
-      width:
-        70px;
-
-      height:
-        70px;
-
-      margin:
-        0 auto
-        20px;
-
-      border-radius:
-        50%;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      font-size:
-        32px;
-
-    }
-
-
-    .guide-icon {
-
-      background:
-        #e7f0f8;
-
-    }
-
-
-    .login-icon {
-
-      background:
-        #e7f4ec;
-
-    }
-
-
-    .action-card h3 {
-
-      color:
-        #12355b;
-
-      font-size:
-        25px;
-
-      margin-bottom:
-        12px;
-
-    }
-
-
-    .action-card p {
-
-      color:
-        #5d6c7a;
-
-      margin-bottom:
-        25px;
-
-      min-height:
-        52px;
-
-    }
-
-
-
-    /* =========================================
-       BUTTONS
-    ========================================= */
-
-    .btn {
-
-      display:
-        inline-block;
-
-      padding:
-        14px 25px;
-
-      border-radius:
-        7px;
-
-      text-decoration:
-        none;
-
-      font-size:
-        15px;
-
-      font-weight:
-        700;
-
-      transition:
-        0.2s;
-
-      border:
-        none;
-
-      cursor:
-        pointer;
-
-    }
-
-
-    .btn-primary {
-
-      background:
-        #12355b;
-
-      color:
-        white;
-
-    }
-
-
-    .btn-primary:hover {
-
-      background:
-        #0c2846;
-
-    }
-
-
-    .btn-success {
-
-      background:
-        #1d6b45;
-
-      color:
-        white;
-
-    }
-
-
-    .btn-success:hover {
-
-      background:
-        #155335;
-
-    }
-
-
-
-    /* =========================================
-       GUIDE SECTION
-    ========================================= */
-
-    .guide-section {
-
-      max-width:
-        1100px;
-
-      margin:
-        75px auto;
-
-      padding:
-        0 20px;
-
-    }
-
-
-    .section-heading {
-
-      text-align:
-        center;
-
-      margin-bottom:
-        45px;
-
-    }
-
-
-    .section-heading h2 {
-
-      color:
-        #12355b;
-
-      font-size:
-        34px;
-
-      margin-bottom:
-        10px;
-
-    }
-
-
-    .section-heading p {
-
-      color:
-        #64748b;
-
-      font-size:
-        17px;
-
-    }
-
-
-    .guide-grid {
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(
-          2,
-          minmax(
-            0,
-            1fr
-          )
-        );
-
-      gap:
-        24px;
-
-    }
-
-
-    .guide-card {
-
-      background:
-        white;
-
-      border:
-        1px solid
-        #e1e8ef;
-
-      border-radius:
-        12px;
-
-      padding:
-        28px;
-
-      display:
-        flex;
-
-      gap:
-        20px;
-
-      align-items:
-        flex-start;
-
-      box-shadow:
-        0 4px 16px
-        rgba(
-          0,
-          0,
-          0,
-          0.04
-        );
-
-    }
-
-
-    .step-number {
-
-      flex:
-        0 0 auto;
-
-      width:
-        42px;
-
-      height:
-        42px;
-
-      border-radius:
-        50%;
-
-      background:
-        #12355b;
-
-      color:
-        white;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      font-weight:
-        700;
-
-      font-size:
-        17px;
-
-    }
-
-
-    .guide-content h3 {
-
-      color:
-        #12355b;
-
-      font-size:
-        19px;
-
-      margin-bottom:
-        8px;
-
-    }
-
-
-    .guide-content p {
-
-      color:
-        #5d6874;
-
-      font-size:
-        15px;
-
-    }
-
-
-
-    /* =========================================
-       IMPORTANT INFORMATION
-    ========================================= */
-
-    .important-section {
-
-      max-width:
-        1100px;
-
-      margin:
-        0 auto
-        70px;
-
-      padding:
-        0 20px;
-
-    }
-
-
-    .important-box {
-
-      background:
-        #fffaf0;
-
-      border:
-        1px solid
-        #f0dfb5;
-
-      border-left:
-        6px solid
-        #c58a1c;
-
-      border-radius:
-        10px;
-
-      padding:
-        30px;
-
-    }
-
-
-    .important-box h3 {
-
-      color:
-        #8a5b05;
-
-      margin-bottom:
-        18px;
-
-      font-size:
-        22px;
-
-    }
-
-
-    .important-box ul {
-
-      padding-left:
-        20px;
-
-    }
-
-
-    .important-box li {
-
-      margin-bottom:
-        10px;
-
-      color:
-        #5c5140;
-
-    }
-
-
-
-    /* =========================================
-       READY SECTION
-    ========================================= */
-
-    .ready-section {
-
-      background:
-        #12355b;
-
-      color:
-        white;
-
-      text-align:
-        center;
-
-      padding:
-        65px 20px;
-
-    }
-
-
-    .ready-section h2 {
-
-      font-size:
-        32px;
-
-      margin-bottom:
-        12px;
-
-    }
-
-
-    .ready-section p {
-
-      opacity:
-        0.88;
-
-      font-size:
-        17px;
-
-      margin-bottom:
-        28px;
-
-    }
-
-
-    .ready-section .btn {
-
-      background:
-        white;
-
-      color:
-        #12355b;
-
-    }
-
-
-    .ready-section .btn:hover {
-
-      background:
-        #eaf1f7;
-
-    }
-
-
-
-    /* =========================================
-       FOOTER
-    ========================================= */
-
-    footer {
-
-      background:
-        #0b2035;
-
-      color:
-        #d8e1ea;
-
-      text-align:
-        center;
-
-      padding:
-        30px 20px;
-
-    }
-
-
-    .footer-title {
-
-      font-weight:
-        700;
-
-      color:
-        white;
-
-      margin-bottom:
-        6px;
-
-    }
-
-
-    .footer-small {
-
-      font-size:
-        13px;
-
-      opacity:
-        0.8;
-
-      margin-top:
-        10px;
-
-    }
-
-
-
-    /* =========================================
-       MOBILE
-    ========================================= */
-
-    @media (
-      max-width:
-      800px
-    ) {
-
-      .header-container {
-
-        flex-direction:
-          column;
-
-        text-align:
-          center;
-
-      }
-
-
-      .header-brand {
-
-        flex-direction:
-          column;
-
-      }
-
-
-      .header-nav {
-
-        display:
-          none;
-
-      }
-
-
-      .hero {
-
-        padding:
-          50px 18px
-          70px;
-
-      }
-
-
-      .hero-logo {
-
-        width:
-          145px;
-
-      }
-
-
-      .institution-name {
-
-        font-size:
-          17px;
-
-      }
-
-
-      .hero h2 {
-
-        font-size:
-          34px;
-
-      }
-
-
-      .hero-subtitle {
-
-        font-size:
-          17px;
-
-      }
-
-
-      .action-grid {
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .guide-grid {
-
-        grid-template-columns:
-          1fr;
-
-      }
-
-
-      .action-card {
-
-        padding:
-          30px
-          22px;
-
-      }
-
-
-      .section-heading h2 {
-
-        font-size:
-          29px;
-
-      }
-
-
-      .guide-card {
-
-        padding:
-          22px;
-
-      }
-
-    }
-
-
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.55}
+    a{color:inherit;text-decoration:none} .wrap{width:min(1180px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px} .brand img{width:52px;height:52px;object-fit:contain}
+    .brand-main{font-weight:800;color:var(--blue);font-size:18px;line-height:1.15} .brand-sub{font-size:12px;color:var(--muted);margin-top:3px}
+    .navlinks{display:flex;gap:20px;align-items:center;font-weight:650;font-size:14px} .navlinks a:hover{color:var(--blue2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:11px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.2s ease}
+    .btn-primary{background:var(--blue);color:#fff;box-shadow:0 7px 18px rgba(18,59,109,.22)} .btn-primary:hover{transform:translateY(-1px);background:#0d315c}
+    .btn-soft{background:#fff;color:var(--blue)}
+    .hero{background:radial-gradient(circle at 90% 10%,rgba(255,255,255,.18),transparent 24%),linear-gradient(135deg,#0e315b,#19578e);color:#fff;padding:74px 0 62px}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}
+    .kicker{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 11px;border-radius:999px;font-size:13px;font-weight:750}
+    .hero h1{font-size:clamp(36px,5vw,58px);line-height:1.05;margin:18px 0 15px} .hero p{font-size:18px;max-width:720px;color:#dceafa;margin:0 0 24px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-logo-card{background:#fff;border-radius:22px;padding:28px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.18);color:var(--blue)}
+    .hero-logo-card img{width:150px;max-width:55%;height:auto} .hero-logo-card strong{display:block;font-size:19px;margin-top:12px}
+    .hero-logo-card span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+    section{padding:62px 0} .section-head{max-width:760px;margin:0 auto 32px;text-align:center}
+    .section-head h2{color:var(--blue);font-size:32px;margin:0 0 8px} .section-head p{color:var(--muted);margin:0}
+    .notice{background:var(--amberBg);border:1px solid #f0d59a;border-left:5px solid #d38a0a;border-radius:12px;padding:16px 18px;margin-bottom:28px}
+    .quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .quick-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    .num{width:36px;height:36px;border-radius:10px;background:var(--blue3);color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:12px}
+    .quick-card h3{margin:0 0 7px;color:var(--blue);font-size:17px} .quick-card p{margin:0;color:var(--muted);font-size:14px}
+    .guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .guide-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+    .guide-card h3{margin:0 0 13px;color:var(--blue);font-size:20px} .guide-card ul{margin:0;padding-left:20px} .guide-card li{margin:8px 0}
+    .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px} .status{border-radius:14px;padding:18px;border:1px solid}
+    .running{background:var(--greenBg);border-color:#abd9c1} .paused{background:var(--amberBg);border-color:#efd18e} .notstarted{background:#f1f4f7;border-color:#d7dde5}
+    .status strong{display:block;margin-bottom:5px}
+    .rules{background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+    .rules table{width:100%;border-collapse:collapse} .rules th,.rules td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--border)}
+    .rules th{background:#f7faff;color:var(--blue)}
+    .final-cta{background:linear-gradient(135deg,#eef5fb,#fff);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .cta-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:32px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .cta-card h2{margin:0 0 6px;color:var(--blue)} .cta-card p{margin:0;color:var(--muted)}
+    footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:13px} footer strong{color:var(--blue)}
+    @media (max-width:900px){.hero-grid,.guide-grid{grid-template-columns:1fr}.hero-logo-card{display:none}.quick-grid{grid-template-columns:repeat(2,1fr)}.status-grid{grid-template-columns:1fr}.cta-card{flex-direction:column;align-items:flex-start}}
+    @media (max-width:620px){.navlinks a:not(.login-link){display:none}.brand-sub{display:none}.hero{padding:52px 0 45px}.hero h1{font-size:38px}.quick-grid{grid-template-columns:1fr}.rules{padding:18px;overflow-x:auto}section{padding:48px 0}}
   </style>
-
-
 </head>
-
-
 <body>
-
-
-
-  <!-- =========================================
-       HEADER
-  ========================================= -->
-
   <header>
-
-    <div
-      class="header-container"
-    >
-
-
-      <div
-        class="header-brand"
-      >
-
-        <img
-          src="./gmc-patiala-logo.png?v=1"
-          alt="Government Medical College Patiala Logo"
-          class="header-logo"
-        >
-
-
-        <div
-          class="header-text"
-        >
-
-          <h1>
-            Electives Counselling Portal
-          </h1>
-
-          <p>
-            Government Medical College, Patiala
-          </p>
-
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="./gmc-patiala-logo.png?v=2" alt="Government Medical College, Patiala">
+        <div>
+          <div class="brand-main">Government Medical College, Patiala</div>
+          <div class="brand-sub">Curriculum Committee · MBBS Final Year Electives Counselling</div>
         </div>
-
       </div>
-
-
-      <nav
-        class="header-nav"
-      >
-
-        <a
-          href="#guide"
-        >
-          Counselling Guide
-        </a>
-
-
-        <a
-          href="https://script.google.com/macros/s/AKfycbxPl2fXf-IBbf_ELIVdR4Au9SR8nAoVK6akYL1AnUsaIat852pa7AfDo_WUhOXxvwcC-g/exec"
-        >
-          Login
-        </a>
-
-      </nav>
-
-
+      <div class="navlinks">
+        <a href="#how">How it works</a>
+        <a href="#instructions">Instructions</a>
+        <a class="btn btn-primary login-link" href="https://script.google.com/macros/s/AKfycbxPl2fXf-IBbf_ELIVdR4Au9SR8nAoVK6akYL1AnUsaIat852pa7AfDo_WUhOXxvwcC-g/exec" target="_blank" rel="noopener">Student Login</a>
+      </div>
     </div>
-
   </header>
 
-
-
-  <!-- =========================================
-       HERO
-  ========================================= -->
-
-  <section
-    class="hero"
-  >
-
-    <div
-      class="hero-container"
-    >
-
-
-      <img
-        src="./gmc-patiala-logo.png?v=1"
-        alt="Government Medical College Patiala"
-        class="hero-logo"
-      >
-
-
-      <div
-        class="institution-name"
-      >
-        GOVERNMENT MEDICAL COLLEGE, PATIALA
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="kicker">Official Student Counselling Portal</div>
+          <h1>MBBS Final Year<br>Electives Counselling</h1>
+          <p>Merit-based online counselling for allocation of Block A and Block B elective postings at Government Medical College, Patiala.</p>
+          <div class="hero-actions">
+            <a class="btn btn-soft" href="https://script.google.com/macros/s/AKfycbxPl2fXf-IBbf_ELIVdR4Au9SR8nAoVK6akYL1AnUsaIat852pa7AfDo_WUhOXxvwcC-g/exec" target="_blank" rel="noopener">Login to Counselling</a>
+            <a class="btn" style="border:1px solid rgba(255,255,255,.35);color:white" href="#instructions">Read Student Instructions</a>
+          </div>
+        </div>
+        <div class="hero-logo-card">
+          <img src="./gmc-patiala-logo.png?v=2" alt="GMC Patiala Logo">
+          <strong>Government Medical College, Patiala</strong>
+          <span>Curriculum Committee<br>Led by Department of General Surgery</span>
+        </div>
       </div>
+    </section>
 
-
-      <h2>
-        Electives Counselling Portal
-      </h2>
-
-
-      <p
-        class="hero-subtitle"
-      >
-        Official online platform for merit-based
-        allocation of elective postings.
-      </p>
-
-
-      <div
-        class="committee-box"
-      >
-
-        Curriculum Committee
-
-        <span>
-          Led by Department of General Surgery
-        </span>
-
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How counselling works</h2>
+          <p>The process is intentionally simple. Please read these steps before your turn.</p>
+        </div>
+        <div class="quick-grid">
+          <div class="quick-card"><div class="num">1</div><h3>Login</h3><p>Use your Roll Number as User ID and the password issued to you.</p></div>
+          <div class="quick-card"><div class="num">2</div><h3>Wait for your turn</h3><p>The portal shows your Hall, active Merit Rank, students ahead and live seat availability.</p></div>
+          <div class="quick-card"><div class="num">3</div><h3>Select electives</h3><p>When your turn becomes active, select exactly one Block A and one Block B elective.</p></div>
+          <div class="quick-card"><div class="num">4</div><h3>Confirm once</h3><p>Check both choices carefully and submit the final confirmation within your allotted time.</p></div>
+        </div>
       </div>
+    </section>
 
+    <section id="instructions" style="background:#edf3f8">
+      <div class="wrap">
+        <div class="section-head"><h2>Student Instructions</h2><p>Please follow these instructions to keep counselling fast and fair for everyone.</p></div>
 
-    </div>
+        <div class="notice"><strong>Keep your login credentials private.</strong> Do not share your password or allow another student to submit choices from your account.</div>
 
-  </section>
-
-
-
-  <!-- =========================================
-       MAIN ACTIONS
-  ========================================= -->
-
-  <section
-    class="actions"
-  >
-
-    <div
-      class="action-grid"
-    >
-
-
-      <!-- GUIDE -->
-
-      <div
-        class="action-card"
-      >
-
-        <div
-          class="action-icon guide-icon"
-        >
-          📘
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h3>Before counselling</h3>
+            <ul>
+              <li>Use a phone or computer with stable internet and sufficient battery.</li>
+              <li>Keep your Roll Number/User ID and password ready.</li>
+              <li>Review your preferred Block A and Block B electives in advance.</li>
+              <li>You may remain logged in while waiting for your merit turn.</li>
+              <li>Seat availability shown in the portal is live and changes as counselling progresses.</li>
+            </ul>
+          </div>
+          <div class="guide-card">
+            <h3>When your turn becomes active</h3>
+            <ul>
+              <li>You will receive a fixed counselling window shown by an exact countdown timer.</li>
+              <li>Select <strong>one Block A</strong> and <strong>one Block B</strong> elective.</li>
+              <li>Only electives with available seats can be successfully allotted.</li>
+              <li>Review both selections carefully before final confirmation.</li>
+              <li>Do not repeatedly press Confirm or refresh while submission is processing.</li>
+            </ul>
+          </div>
+          <div class="guide-card">
+            <h3>While you are waiting</h3>
+            <ul>
+              <li>Your Hall, Merit Rank, Roll Number and student details are displayed after login.</li>
+              <li>When counselling is running, you can see the current active Merit Rank, students ahead and an approximate wait time.</li>
+              <li>The approximate wait is indicative only and may change depending on earlier students.</li>
+              <li>Live Block A and Block B seat matrices remain visible so you can keep alternative choices ready.</li>
+            </ul>
+          </div>
+          <div class="guide-card">
+            <h3>After final confirmation</h3>
+            <ul>
+              <li>Your confirmed Block A and Block B allotments are shown on screen.</li>
+              <li>A successfully confirmed allotment is treated as final.</li>
+              <li>If an administrator takes control of your counselling, follow the message shown on screen.</li>
+              <li>For a technical problem during your active turn, immediately contact the counselling team at the venue.</li>
+            </ul>
+          </div>
         </div>
 
-
-        <h3>
-          Guide to Electives Counselling
-        </h3>
-
-
-        <p>
-          Understand the counselling process,
-          elective selection, seat availability
-          and final allocation.
-        </p>
-
-
-        <a
-          href="#guide"
-          class="btn btn-primary"
-        >
-          VIEW COUNSELLING GUIDE
-        </a>
-
-
+        <div class="status-grid">
+          <div class="status running"><strong>🟢 COUNSELLING RUNNING</strong>Your queue is active. Waiting students may see an approximate waiting time.</div>
+          <div class="status paused"><strong>🟠 COUNSELLING PAUSED</strong>Stay logged in and wait for the administrator to resume counselling.</div>
+          <div class="status notstarted"><strong>⚪ COUNSELLING NOT STARTED</strong>You may log in and verify your details. Wait for counselling to be started for your Hall.</div>
+        </div>
       </div>
+    </section>
 
-
-
-      <!-- LOGIN -->
-
-      <div
-        class="action-card"
-      >
-
-        <div
-          class="action-icon login-icon"
-        >
-          🔐
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>Hall & Allocation Rules</h2><p>Your Hall is assigned automatically from your Merit Rank.</p></div>
+        <div class="rules">
+          <table>
+            <thead><tr><th>Merit Rank</th><th>Hall</th><th>Selection</th></tr></thead>
+            <tbody>
+              <tr><td>1–126</td><td><strong>Hall 1</strong></td><td>One Block A + one Block B elective</td></tr>
+              <tr><td>127–252</td><td><strong>Hall 2</strong></td><td>One Block A + one Block B elective</td></tr>
+            </tbody>
+          </table>
         </div>
-
-
-        <h3>
-          Login to Counselling Portal
-        </h3>
-
-
-        <p>
-          Eligible students can log in using
-          their assigned credentials when
-          counselling is active.
-        </p>
-
-
-        <a
-          href="https://script.google.com/macros/s/AKfycbxPl2fXf-IBbf_ELIVdR4Au9SR8nAoVK6akYL1AnUsaIat852pa7AfDo_WUhOXxvwcC-g/exec"
-          class="btn btn-success"
-        >
-          LOGIN TO COUNSELLING PORTAL
-        </a>
-
-
       </div>
+    </section>
 
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================================
-       GUIDE
-  ========================================= -->
-
-  <section
-    id="guide"
-    class="guide-section"
-  >
-
-
-    <div
-      class="section-heading"
-    >
-
-      <h2>
-        Guide to Electives Counselling
-      </h2>
-
-
-      <p>
-        Please read the following information
-        before participating in counselling.
-      </p>
-
-
-    </div>
-
-
-
-    <div
-      class="guide-grid"
-    >
-
-
-      <!-- STEP 1 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          1
+    <section class="final-cta">
+      <div class="wrap">
+        <div class="cta-card">
+          <div><h2>Ready for counselling?</h2><p>Open the counselling application and log in using your assigned credentials.</p></div>
+          <a class="btn btn-primary" href="https://script.google.com/macros/s/AKfycbxPl2fXf-IBbf_ELIVdR4Au9SR8nAoVK6akYL1AnUsaIat852pa7AfDo_WUhOXxvwcC-g/exec" target="_blank" rel="noopener">OPEN COUNSELLING PORTAL</a>
         </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Merit-Based Counselling
-          </h3>
-
-
-          <p>
-            Counselling is conducted according
-            to the approved merit rank. Students
-            are invited to make their selections
-            sequentially according to their rank.
-          </p>
-
-        </div>
-
       </div>
-
-
-
-      <!-- STEP 2 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          2
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Wait for Your Turn
-          </h3>
-
-
-          <p>
-            Students should log in to the portal
-            and wait for their merit rank to
-            become active. The portal displays
-            the current counselling status and
-            available elective seats.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- STEP 3 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          3
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Select Block A Elective
-          </h3>
-
-
-          <p>
-            When your turn becomes active,
-            select one available elective from
-            the Block A elective options.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- STEP 4 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          4
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Select Block B Elective
-          </h3>
-
-
-          <p>
-            Select one available elective from
-            the Block B elective options during
-            your allotted counselling turn.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- STEP 5 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          5
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Check Seat Availability
-          </h3>
-
-
-          <p>
-            Elective seats are limited. The
-            available seat count shown on the
-            portal is updated as students
-            complete their allocations.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- STEP 6 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          6
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Confirm Your Selections
-          </h3>
-
-
-          <p>
-            Carefully review both selected
-            electives before final confirmation.
-            Once confirmed, the allocation is
-            recorded and cannot be changed.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- STEP 7 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          7
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Final Allocation
-          </h3>
-
-
-          <p>
-            After successful confirmation, your
-            elective allocation is completed
-            and recorded in the counselling
-            system.
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- STEP 8 -->
-
-      <div
-        class="guide-card"
-      >
-
-        <div
-          class="step-number"
-        >
-          8
-        </div>
-
-
-        <div
-          class="guide-content"
-        >
-
-          <h3>
-            Keep Your Login Credentials Secure
-          </h3>
-
-
-          <p>
-            Use only your assigned login
-            credentials. Do not share your
-            username or password with any other
-            person.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-
-  </section>
-
-
-
-  <!-- =========================================
-       IMPORTANT INFORMATION
-  ========================================= -->
-
-  <section
-    class="important-section"
-  >
-
-    <div
-      class="important-box"
-    >
-
-      <h3>
-        Important Instructions
-      </h3>
-
-
-      <ul>
-
-        <li>
-          Counselling follows the approved
-          merit sequence.
-        </li>
-
-        <li>
-          Students should ensure a stable
-          internet connection during their turn.
-        </li>
-
-        <li>
-          Elective availability may change as
-          students preceding you complete their
-          allocations.
-        </li>
-
-        <li>
-          Please review both selections
-          carefully before final confirmation.
-        </li>
-
-        <li>
-          Once confirmed, elective allocations
-          cannot be changed through the portal.
-        </li>
-
-        <li>
-          Students who miss or exceed their
-          allotted counselling time may be
-          handled according to the applicable
-          counselling rules.
-        </li>
-
-      </ul>
-
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================================
-       LOGIN CTA
-  ========================================= -->
-
-  <section
-    class="ready-section"
-  >
-
-    <h2>
-      Ready to Participate?
-    </h2>
-
-
-    <p>
-      Log in to the Electives Counselling Portal
-      when counselling is active for your merit rank.
-    </p>
-
-
-    <a
-      href="https://script.google.com/macros/s/AKfycbxPl2fXf-IBbf_ELIVdR4Au9SR8nAoVK6akYL1AnUsaIat852pa7AfDo_WUhOXxvwcC-g/exec"
-      class="btn"
-    >
-      LOGIN TO COUNSELLING PORTAL
-    </a>
-
-
-  </section>
-
-
-
-  <!-- =========================================
-       FOOTER
-  ========================================= -->
+    </section>
+  </main>
 
   <footer>
-
-
-    <div
-      class="footer-title"
-    >
-      Curriculum Committee
+    <div class="wrap">
+      <strong>Government Medical College, Patiala</strong><br>
+      Curriculum Committee · Led by Department of General Surgery<br>
+      MBBS Final Year Electives Counselling System
     </div>
-
-
-    <div>
-      Led by Department of General Surgery
-    </div>
-
-
-    <div
-      class="footer-small"
-    >
-      Government Medical College, Patiala
-    </div>
-
-
-    <div
-      class="footer-small"
-    >
-      Electives Counselling Portal
-    </div>
-
-
   </footer>
-
-
-
 </body>
-
-</html>]
+</html>
