@@ -1,199 +1,2954 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#123b6d">
-  <meta name="description" content="Government Medical College, Patiala — MBBS Final Year Electives Counselling Portal">
-  <title>GMC Patiala | MBBS Electives Counselling</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#123b6d"
+  >
+
+  <meta
+    name="description"
+    content="Government Medical College, Patiala — MBBS Electives Counselling 2026"
+  >
+
+  <title>
+    GMC Patiala | MBBS Electives Counselling 2026
+  </title>
+
+
   <style>
+
     :root {
-      --blue:#123b6d;--blue2:#1d5b96;--blue3:#eaf3fb;--green:#1f7a4c;--greenBg:#eaf7f0;
-      --amber:#a06100;--amberBg:#fff6df;--text:#1d2a38;--muted:#66758a;--border:#dce5ee;
-      --bg:#f5f8fb;--card:#fff;--shadow:0 10px 32px rgba(18,59,109,.10);
+
+      --navy: #123b6d;
+      --navy-dark: #0a2948;
+      --blue: #1f5f9e;
+      --blue-soft: #eaf3fb;
+
+      --green: #19734a;
+      --green-soft: #eaf7f0;
+
+      --amber: #9a6200;
+      --amber-soft: #fff6df;
+
+      --red: #b42318;
+      --red-soft: #fff1f0;
+
+      --text: #1d2a38;
+      --muted: #66758a;
+      --border: #dce5ee;
+
+      --bg: #f5f8fb;
+      --white: #ffffff;
+
+      --shadow:
+        0 14px 40px
+        rgba(18, 59, 109, 0.10);
+
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.55}
-    a{color:inherit;text-decoration:none} .wrap{width:min(1180px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px} .brand img{width:52px;height:52px;object-fit:contain}
-    .brand-main{font-weight:800;color:var(--blue);font-size:18px;line-height:1.15} .brand-sub{font-size:12px;color:var(--muted);margin-top:3px}
-    .navlinks{display:flex;gap:20px;align-items:center;font-weight:650;font-size:14px} .navlinks a:hover{color:var(--blue2)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:11px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.2s ease}
-    .btn-primary{background:var(--blue);color:#fff;box-shadow:0 7px 18px rgba(18,59,109,.22)} .btn-primary:hover{transform:translateY(-1px);background:#0d315c}
-    .btn-soft{background:#fff;color:var(--blue)}
-    .hero{background:radial-gradient(circle at 90% 10%,rgba(255,255,255,.18),transparent 24%),linear-gradient(135deg,#0e315b,#19578e);color:#fff;padding:74px 0 62px}
-    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}
-    .kicker{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 11px;border-radius:999px;font-size:13px;font-weight:750}
-    .hero h1{font-size:clamp(36px,5vw,58px);line-height:1.05;margin:18px 0 15px} .hero p{font-size:18px;max-width:720px;color:#dceafa;margin:0 0 24px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-logo-card{background:#fff;border-radius:22px;padding:28px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.18);color:var(--blue)}
-    .hero-logo-card img{width:150px;max-width:55%;height:auto} .hero-logo-card strong{display:block;font-size:19px;margin-top:12px}
-    .hero-logo-card span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
-    section{padding:62px 0} .section-head{max-width:760px;margin:0 auto 32px;text-align:center}
-    .section-head h2{color:var(--blue);font-size:32px;margin:0 0 8px} .section-head p{color:var(--muted);margin:0}
-    .notice{background:var(--amberBg);border:1px solid #f0d59a;border-left:5px solid #d38a0a;border-radius:12px;padding:16px 18px;margin-bottom:28px}
-    .quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .quick-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
-    .num{width:36px;height:36px;border-radius:10px;background:var(--blue3);color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:12px}
-    .quick-card h3{margin:0 0 7px;color:var(--blue);font-size:17px} .quick-card p{margin:0;color:var(--muted);font-size:14px}
-    .guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .guide-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
-    .guide-card h3{margin:0 0 13px;color:var(--blue);font-size:20px} .guide-card ul{margin:0;padding-left:20px} .guide-card li{margin:8px 0}
-    .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px} .status{border-radius:14px;padding:18px;border:1px solid}
-    .running{background:var(--greenBg);border-color:#abd9c1} .paused{background:var(--amberBg);border-color:#efd18e} .notstarted{background:#f1f4f7;border-color:#d7dde5}
-    .status strong{display:block;margin-bottom:5px}
-    .rules{background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
-    .rules table{width:100%;border-collapse:collapse} .rules th,.rules td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--border)}
-    .rules th{background:#f7faff;color:var(--blue)}
-    .final-cta{background:linear-gradient(135deg,#eef5fb,#fff);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .cta-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:32px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .cta-card h2{margin:0 0 6px;color:var(--blue)} .cta-card p{margin:0;color:var(--muted)}
-    footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:13px} footer strong{color:var(--blue)}
-    @media (max-width:900px){.hero-grid,.guide-grid{grid-template-columns:1fr}.hero-logo-card{display:none}.quick-grid{grid-template-columns:repeat(2,1fr)}.status-grid{grid-template-columns:1fr}.cta-card{flex-direction:column;align-items:flex-start}}
-    @media (max-width:620px){.navlinks a:not(.login-link){display:none}.brand-sub{display:none}.hero{padding:52px 0 45px}.hero h1{font-size:38px}.quick-grid{grid-template-columns:1fr}.rules{padding:18px;overflow-x:auto}section{padding:48px 0}}
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+
+      margin: 0;
+
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background:
+        var(--bg);
+
+      color:
+        var(--text);
+
+      line-height:
+        1.55;
+
+    }
+
+
+    a {
+
+      color: inherit;
+
+      text-decoration: none;
+
+    }
+
+
+    .wrap {
+
+      width:
+        min(
+          1180px,
+          92%
+        );
+
+      margin:
+        0 auto;
+
+    }
+
+
+    /* ======================================================
+       HEADER
+       ====================================================== */
+
+    header {
+
+      position:
+        sticky;
+
+      top:
+        0;
+
+      z-index:
+        100;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.96
+        );
+
+      backdrop-filter:
+        blur(10px);
+
+      border-bottom:
+        1px solid
+        var(--border);
+
+    }
+
+
+    .nav {
+
+      min-height:
+        78px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        24px;
+
+    }
+
+
+    .brand {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        12px;
+
+      min-width:
+        0;
+
+    }
+
+
+    .brand img {
+
+      width:
+        54px;
+
+      height:
+        54px;
+
+      object-fit:
+        contain;
+
+      flex:
+        0 0 auto;
+
+    }
+
+
+    .brand-main {
+
+      color:
+        var(--navy);
+
+      font-size:
+        18px;
+
+      font-weight:
+        850;
+
+      line-height:
+        1.15;
+
+    }
+
+
+    .brand-sub {
+
+      margin-top:
+        4px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        12px;
+
+    }
+
+
+    .navlinks {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        22px;
+
+      font-size:
+        14px;
+
+      font-weight:
+        700;
+
+      white-space:
+        nowrap;
+
+    }
+
+
+    .navlinks a:not(.btn):hover {
+
+      color:
+        var(--blue);
+
+    }
+
+
+    /* ======================================================
+       BUTTONS
+       ====================================================== */
+
+    .btn {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      border:
+        none;
+
+      border-radius:
+        12px;
+
+      padding:
+        13px 21px;
+
+      font-weight:
+        850;
+
+      cursor:
+        pointer;
+
+      transition:
+        0.18s ease;
+
+    }
+
+
+    .btn:hover {
+
+      transform:
+        translateY(-1px);
+
+    }
+
+
+    .btn-primary {
+
+      background:
+        var(--navy);
+
+      color:
+        #ffffff;
+
+      box-shadow:
+        0 8px 20px
+        rgba(
+          18,
+          59,
+          109,
+          0.22
+        );
+
+    }
+
+
+    .btn-primary:hover {
+
+      background:
+        var(--navy-dark);
+
+    }
+
+
+    .btn-light {
+
+      background:
+        #ffffff;
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .btn-outline-light {
+
+      color:
+        #ffffff;
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.38
+        );
+
+      background:
+        transparent;
+
+    }
+
+
+    /* ======================================================
+       HERO
+       ====================================================== */
+
+    .hero {
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+      color:
+        #ffffff;
+
+      background:
+
+        radial-gradient(
+          circle at 88% 10%,
+          rgba(
+            255,
+            255,
+            255,
+            0.18
+          ),
+          transparent 25%
+        ),
+
+        linear-gradient(
+          135deg,
+          #0b2c50,
+          #174f86 72%,
+          #1c639d
+        );
+
+      padding:
+        76px 0
+        68px;
+
+    }
+
+
+    .hero::after {
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      width:
+        380px;
+
+      height:
+        380px;
+
+      border-radius:
+        50%;
+
+      right:
+        -160px;
+
+      bottom:
+        -220px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.07
+        );
+
+    }
+
+
+    .hero-grid {
+
+      position:
+        relative;
+
+      z-index:
+        1;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1.25fr
+        0.75fr;
+
+      gap:
+        44px;
+
+      align-items:
+        center;
+
+    }
+
+
+    .kicker {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      padding:
+        7px 12px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.12
+        );
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.22
+        );
+
+      font-size:
+        13px;
+
+      font-weight:
+        800;
+
+    }
+
+
+    .hero h1 {
+
+      margin:
+        18px 0
+        16px;
+
+      font-size:
+        clamp(
+          40px,
+          5vw,
+          62px
+        );
+
+      line-height:
+        1.03;
+
+      letter-spacing:
+        -1.5px;
+
+    }
+
+
+    .hero p {
+
+      margin:
+        0 0
+        25px;
+
+      max-width:
+        760px;
+
+      color:
+        #dceafa;
+
+      font-size:
+        18px;
+
+    }
+
+
+    .hero-actions {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        12px;
+
+      margin-bottom:
+        28px;
+
+    }
+
+
+    .hero-note {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        10px;
+
+    }
+
+
+    .hero-pill {
+
+      padding:
+        7px 11px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.10
+        );
+
+      color:
+        #e9f4ff;
+
+      font-size:
+        13px;
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.16
+        );
+
+    }
+
+
+    .hero-card {
+
+      background:
+        #ffffff;
+
+      color:
+        var(--navy);
+
+      padding:
+        28px;
+
+      border-radius:
+        24px;
+
+      text-align:
+        center;
+
+      box-shadow:
+        0 22px 55px
+        rgba(
+          0,
+          0,
+          0,
+          0.20
+        );
+
+    }
+
+
+    .hero-card img {
+
+      width:
+        155px;
+
+      max-width:
+        60%;
+
+      height:
+        auto;
+
+    }
+
+
+    .hero-card strong {
+
+      display:
+        block;
+
+      margin-top:
+        14px;
+
+      font-size:
+        20px;
+
+    }
+
+
+    .hero-card span {
+
+      display:
+        block;
+
+      margin-top:
+        5px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        13px;
+
+    }
+
+
+    .hero-card .official {
+
+      display:
+        inline-block;
+
+      margin-top:
+        16px;
+
+      padding:
+        6px 10px;
+
+      border-radius:
+        999px;
+
+      background:
+        var(--blue-soft);
+
+      color:
+        var(--navy);
+
+      font-weight:
+        800;
+
+      font-size:
+        12px;
+
+    }
+
+
+    /* ======================================================
+       GENERIC SECTIONS
+       ====================================================== */
+
+    section {
+
+      padding:
+        64px 0;
+
+    }
+
+
+    .section-soft {
+
+      background:
+        #edf3f8;
+
+    }
+
+
+    .section-white {
+
+      background:
+        #ffffff;
+
+    }
+
+
+    .section-head {
+
+      width:
+        min(
+          780px,
+          100%
+        );
+
+      margin:
+        0 auto
+        34px;
+
+      text-align:
+        center;
+
+    }
+
+
+    .section-head h2 {
+
+      margin:
+        0 0
+        9px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        32px;
+
+      line-height:
+        1.15;
+
+    }
+
+
+    .section-head p {
+
+      margin:
+        0;
+
+      color:
+        var(--muted);
+
+    }
+
+
+    /* ======================================================
+       HOW IT WORKS
+       ====================================================== */
+
+    .steps-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(
+          5,
+          1fr
+        );
+
+      gap:
+        16px;
+
+    }
+
+
+    .step-card {
+
+      position:
+        relative;
+
+      background:
+        var(--white);
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        18px;
+
+      padding:
+        21px;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .step-number {
+
+      width:
+        39px;
+
+      height:
+        39px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      margin-bottom:
+        13px;
+
+      background:
+        var(--blue-soft);
+
+      color:
+        var(--navy);
+
+      border-radius:
+        11px;
+
+      font-weight:
+        900;
+
+    }
+
+
+    .step-card h3 {
+
+      margin:
+        0 0
+        7px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        17px;
+
+    }
+
+
+    .step-card p {
+
+      margin:
+        0;
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
+    }
+
+
+    /* ======================================================
+       TIMESLOT EXPLAINER
+       ====================================================== */
+
+    .timeslot-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        22px;
+
+    }
+
+
+    .timeslot-card {
+
+      overflow:
+        hidden;
+
+      background:
+        #ffffff;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        20px;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .timeslot-card-header {
+
+      padding:
+        18px 22px;
+
+      background:
+        var(--navy);
+
+      color:
+        #ffffff;
+
+    }
+
+
+    .timeslot-card-header h3 {
+
+      margin:
+        0;
+
+      font-size:
+        22px;
+
+    }
+
+
+    .timeslot-card-header p {
+
+      margin:
+        4px 0 0;
+
+      color:
+        #dceafa;
+
+      font-size:
+        13px;
+
+    }
+
+
+    .timeslot-body {
+
+      padding:
+        22px;
+
+    }
+
+
+    .posting-row {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        60px 1fr;
+
+      gap:
+        14px;
+
+      align-items:
+        center;
+
+      padding:
+        14px 0;
+
+      border-bottom:
+        1px solid
+        var(--border);
+
+    }
+
+
+    .posting-row:last-child {
+
+      border-bottom:
+        none;
+
+    }
+
+
+    .block-badge {
+
+      width:
+        52px;
+
+      height:
+        52px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border-radius:
+        14px;
+
+      background:
+        var(--blue-soft);
+
+      color:
+        var(--navy);
+
+      font-size:
+        20px;
+
+      font-weight:
+        900;
+
+    }
+
+
+    .posting-row strong {
+
+      display:
+        block;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        2px;
+
+    }
+
+
+    .posting-row span {
+
+      display:
+        block;
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
+    }
+
+
+    .timeslot-rule {
+
+      margin-top:
+        22px;
+
+      padding:
+        16px 18px;
+
+      border-radius:
+        13px;
+
+      background:
+        var(--amber-soft);
+
+      border:
+        1px solid
+        #efd18e;
+
+      color:
+        #6f4a00;
+
+    }
+
+
+    /* ======================================================
+       WAITING EXPERIENCE
+       ====================================================== */
+
+    .waiting-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(
+          4,
+          1fr
+        );
+
+      gap:
+        17px;
+
+    }
+
+
+    .waiting-card {
+
+      background:
+        #ffffff;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        17px;
+
+      padding:
+        22px;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .waiting-icon {
+
+      font-size:
+        24px;
+
+      margin-bottom:
+        10px;
+
+    }
+
+
+    .waiting-card h3 {
+
+      margin:
+        0 0
+        7px;
+
+      color:
+        var(--navy);
+
+      font-size:
+        17px;
+
+    }
+
+
+    .waiting-card p {
+
+      margin:
+        0;
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
+    }
+
+
+    /* ======================================================
+       IMPORTANT NOTICE
+       ====================================================== */
+
+    .notice {
+
+      margin-top:
+        28px;
+
+      padding:
+        17px 19px;
+
+      background:
+        var(--amber-soft);
+
+      border:
+        1px solid
+        #efd18e;
+
+      border-left:
+        5px solid
+        #c88700;
+
+      border-radius:
+        13px;
+
+    }
+
+
+    /* ======================================================
+       STUDENT JOURNEY
+       ====================================================== */
+
+    .journey-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+      gap:
+        20px;
+
+    }
+
+
+    .journey-card {
+
+      background:
+        #ffffff;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        18px;
+
+      padding:
+        25px;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .journey-label {
+
+      display:
+        inline-flex;
+
+      padding:
+        6px 10px;
+
+      border-radius:
+        999px;
+
+      background:
+        var(--blue-soft);
+
+      color:
+        var(--navy);
+
+      font-weight:
+        850;
+
+      font-size:
+        12px;
+
+      margin-bottom:
+        12px;
+
+    }
+
+
+    .journey-card h3 {
+
+      margin:
+        0 0
+        10px;
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .journey-card ul {
+
+      margin:
+        0;
+
+      padding-left:
+        20px;
+
+    }
+
+
+    .journey-card li {
+
+      margin:
+        8px 0;
+
+    }
+
+
+    /* ======================================================
+       STATUS
+       ====================================================== */
+
+    .status-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+      gap:
+        16px;
+
+    }
+
+
+    .status-card {
+
+      padding:
+        20px;
+
+      border-radius:
+        16px;
+
+      border:
+        1px solid;
+
+    }
+
+
+    .status-card strong {
+
+      display:
+        block;
+
+      margin-bottom:
+        6px;
+
+      font-size:
+        15px;
+
+    }
+
+
+    .status-running {
+
+      background:
+        var(--green-soft);
+
+      border-color:
+        #abd9c1;
+
+      color:
+        #145c3d;
+
+    }
+
+
+    .status-paused {
+
+      background:
+        var(--amber-soft);
+
+      border-color:
+        #efd18e;
+
+      color:
+        #805300;
+
+    }
+
+
+    .status-not-started {
+
+      background:
+        #f1f4f7;
+
+      border-color:
+        #d7dde5;
+
+      color:
+        #4d5d6c;
+
+    }
+
+
+    /* ======================================================
+       RULES
+       ====================================================== */
+
+    .rules-card {
+
+      background:
+        #ffffff;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        20px;
+
+      box-shadow:
+        var(--shadow);
+
+      overflow:
+        hidden;
+
+    }
+
+
+    .rule-row {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        54px 1fr;
+
+      gap:
+        15px;
+
+      padding:
+        18px 22px;
+
+      border-bottom:
+        1px solid
+        var(--border);
+
+    }
+
+
+    .rule-row:last-child {
+
+      border-bottom:
+        none;
+
+    }
+
+
+    .rule-icon {
+
+      width:
+        42px;
+
+      height:
+        42px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border-radius:
+        11px;
+
+      background:
+        var(--blue-soft);
+
+      color:
+        var(--navy);
+
+      font-weight:
+        900;
+
+    }
+
+
+    .rule-row strong {
+
+      display:
+        block;
+
+      color:
+        var(--navy);
+
+      margin-bottom:
+        3px;
+
+    }
+
+
+    .rule-row span {
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
+    }
+
+
+    /* ======================================================
+       FINAL CTA
+       ====================================================== */
+
+    .final-cta {
+
+      background:
+        linear-gradient(
+          135deg,
+          #edf5fc,
+          #ffffff
+        );
+
+      border-top:
+        1px solid
+        var(--border);
+
+      border-bottom:
+        1px solid
+        var(--border);
+
+    }
+
+
+    .cta-card {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        25px;
+
+      background:
+        #ffffff;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        21px;
+
+      padding:
+        34px;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .cta-card h2 {
+
+      margin:
+        0 0
+        7px;
+
+      color:
+        var(--navy);
+
+    }
+
+
+    .cta-card p {
+
+      margin:
+        0;
+
+      color:
+        var(--muted);
+
+    }
+
+
+    /* ======================================================
+       FOOTER
+       ====================================================== */
+
+    footer {
+
+      padding:
+        31px 0
+        42px;
+
+      color:
+        var(--muted);
+
+      text-align:
+        center;
+
+      font-size:
+        13px;
+
+    }
+
+
+    footer strong {
+
+      color:
+        var(--navy);
+
+    }
+
+
+    /* ======================================================
+       RESPONSIVE
+       ====================================================== */
+
+    @media (
+      max-width:
+      1000px
+    ) {
+
+      .steps-grid {
+
+        grid-template-columns:
+          repeat(
+            2,
+            1fr
+          );
+
+      }
+
+
+      .waiting-grid {
+
+        grid-template-columns:
+          repeat(
+            2,
+            1fr
+          );
+
+      }
+
+    }
+
+
+    @media (
+      max-width:
+      900px
+    ) {
+
+      .hero-grid,
+      .timeslot-grid,
+      .journey-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .hero-card {
+
+        display:
+          none;
+
+      }
+
+
+      .status-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .cta-card {
+
+        flex-direction:
+          column;
+
+        align-items:
+          flex-start;
+
+      }
+
+    }
+
+
+    @media (
+      max-width:
+      650px
+    ) {
+
+      .navlinks a:not(.login-link) {
+
+        display:
+          none;
+
+      }
+
+
+      .brand-sub {
+
+        display:
+          none;
+
+      }
+
+
+      .hero {
+
+        padding:
+          55px 0
+          48px;
+
+      }
+
+
+      .hero h1 {
+
+        font-size:
+          40px;
+
+      }
+
+
+      .steps-grid,
+      .waiting-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      section {
+
+        padding:
+          50px 0;
+
+      }
+
+
+      .section-head h2 {
+
+        font-size:
+          28px;
+
+      }
+
+    }
+
+
   </style>
+
 </head>
+
+
 <body>
+
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
   <header>
+
     <div class="wrap nav">
+
+
       <div class="brand">
-        <img src="./gmc-patiala-logo.png?v=2" alt="Government Medical College, Patiala">
+
+        <img
+          src="./gmc-patiala-logo.png?v=2"
+          alt="Government Medical College, Patiala"
+        >
+
         <div>
-          <div class="brand-main">Government Medical College, Patiala</div>
-          <div class="brand-sub">Curriculum Committee · MBBS Final Year Electives Counselling</div>
+
+          <div class="brand-main">
+            Government Medical College, Patiala
+          </div>
+
+          <div class="brand-sub">
+            Curriculum Committee · MBBS Electives Counselling 2026
+          </div>
+
         </div>
+
       </div>
-      <div class="navlinks">
-        <a href="#how">How it works</a>
-        <a href="#instructions">Instructions</a>
-        <a class="btn btn-primary login-link" href="https://script.google.com/macros/s/AKfycbz7EvDBhzSYeYLJJgL_3REZ1oTUnGembUa5cJrNr1y8roYT0qGB9knRoTQ9oxfE9tJd/exec" target="_blank" rel="noopener">Student Login</a>
-      </div>
+
+
+      <nav class="navlinks">
+
+        <a href="#how">
+          How it works
+        </a>
+
+        <a href="#timeslots">
+          Timeslots
+        </a>
+
+        <a href="#rules">
+          Rules
+        </a>
+
+        <a
+          class="btn btn-primary login-link"
+          href="#portal"
+        >
+          Open Portal
+        </a>
+
+      </nav>
+
+
     </div>
+
   </header>
 
+
+
   <main>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
     <section class="hero">
+
       <div class="wrap hero-grid">
+
+
         <div>
-          <div class="kicker">Official Student Counselling Portal</div>
-          <h1>MBBS Final Year<br>Electives Counselling</h1>
-          <p>Merit-based online counselling for allocation of Block A and Block B elective postings at Government Medical College, Patiala.</p>
-          <div class="hero-actions">
-            <a class="btn btn-soft" href="https://script.google.com/macros/s/AKfycbz7EvDBhzSYeYLJJgL_3REZ1oTUnGembUa5cJrNr1y8roYT0qGB9knRoTQ9oxfE9tJd/exec" target="_blank" rel="noopener">Login to Counselling</a>
-            <a class="btn" style="border:1px solid rgba(255,255,255,.35);color:white" href="#instructions">Read Student Instructions</a>
+
+          <div class="kicker">
+            Official MBBS Electives Counselling Portal
           </div>
+
+
+          <h1>
+            MBBS Electives<br>
+            Counselling 2026
+          </h1>
+
+
+          <p>
+
+            Merit-based online counselling for allocation of
+            Block A and Block B elective postings at
+            Government Medical College, Patiala.
+
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              class="btn btn-light"
+              href="#portal"
+            >
+              Open Counselling Portal
+            </a>
+
+
+            <a
+              class="btn btn-outline-light"
+              href="#how"
+            >
+              Understand the Process
+            </a>
+
+          </div>
+
+
+          <div class="hero-note">
+
+            <span class="hero-pill">
+              One global merit queue
+            </span>
+
+            <span class="hero-pill">
+              Live seat availability
+            </span>
+
+            <span class="hero-pill">
+              First or Second Timeslot
+            </span>
+
+          </div>
+
         </div>
-        <div class="hero-logo-card">
-          <img src="./gmc-patiala-logo.png?v=2" alt="GMC Patiala Logo">
-          <strong>Government Medical College, Patiala</strong>
-          <span>Curriculum Committee<br>Led by Department of General Surgery</span>
+
+
+        <div class="hero-card">
+
+          <img
+            src="./gmc-patiala-logo.png?v=2"
+            alt="GMC Patiala Logo"
+          >
+
+          <strong>
+            Government Medical College, Patiala
+          </strong>
+
+          <span>
+            Curriculum Committee<br>
+            Led by Department of General Surgery
+          </span>
+
+          <div class="official">
+            Official Student Counselling System
+          </div>
+
         </div>
+
+
       </div>
+
     </section>
+
+
+
+    <!-- =====================================================
+         HOW COUNSELLING WORKS
+         ===================================================== -->
 
     <section id="how">
+
       <div class="wrap">
+
+
         <div class="section-head">
-          <h2>How counselling works</h2>
-          <p>The process is intentionally simple. Please read these steps before your turn.</p>
+
+          <h2>
+            How counselling works
+          </h2>
+
+          <p>
+
+            Every student follows the same merit-based queue.
+            Your choices become active only when your merit rank
+            reaches the front of the queue.
+
+          </p>
+
         </div>
-        <div class="quick-grid">
-          <div class="quick-card"><div class="num">1</div><h3>Login</h3><p>Use your Roll Number as User ID and the password issued to you.</p></div>
-          <div class="quick-card"><div class="num">2</div><h3>Wait for your turn</h3><p>The portal shows your Hall, active Merit Rank, students ahead and live seat availability.</p></div>
-          <div class="quick-card"><div class="num">3</div><h3>Select electives</h3><p>When your turn becomes active, select exactly one Block A and one Block B elective.</p></div>
-          <div class="quick-card"><div class="num">4</div><h3>Confirm once</h3><p>Check both choices carefully and submit the final confirmation within your allotted time.</p></div>
+
+
+        <div class="steps-grid">
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              1
+            </div>
+
+            <h3>
+              Login
+            </h3>
+
+            <p>
+
+              Use your Roll Number as your User ID
+              and the password issued to you.
+
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              2
+            </div>
+
+            <h3>
+              Wait in the merit queue
+            </h3>
+
+            <p>
+
+              See the active merit rank, students ahead
+              and approximate waiting time.
+
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              3
+            </div>
+
+            <h3>
+              Choose a timeslot
+            </h3>
+
+            <p>
+
+              When your turn activates, choose either
+              First Timeslot or Second Timeslot.
+
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              4
+            </div>
+
+            <h3>
+              Select electives
+            </h3>
+
+            <p>
+
+              Select exactly one Block A elective
+              and one Block B elective within that timeslot.
+
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              5
+            </div>
+
+            <h3>
+              Confirm
+            </h3>
+
+            <p>
+
+              Review your selections carefully.
+              Final confirmation completes your counselling.
+
+            </p>
+
+          </div>
+
+
         </div>
+
+
       </div>
+
     </section>
 
-    <section id="instructions" style="background:#edf3f8">
+
+
+    <!-- =====================================================
+         TIMESLOT EXPLAINER
+         ===================================================== -->
+
+    <section
+      id="timeslots"
+      class="section-soft"
+    >
+
       <div class="wrap">
-        <div class="section-head"><h2>Student Instructions</h2><p>Please follow these instructions to keep counselling fast and fair for everyone.</p></div>
 
-        <div class="notice"><strong>Keep your login credentials private.</strong> Do not share your password or allow another student to submit choices from your account.</div>
 
-        <div class="guide-grid">
-          <div class="guide-card">
-            <h3>Before counselling</h3>
-            <ul>
-              <li>Use a phone or computer with stable internet and sufficient battery.</li>
-              <li>Keep your Roll Number/User ID and password ready.</li>
-              <li>Review your preferred Block A and Block B electives in advance.</li>
-              <li>You may remain logged in while waiting for your merit turn.</li>
-              <li>Seat availability shown in the portal is live and changes as counselling progresses.</li>
-            </ul>
-          </div>
-          <div class="guide-card">
-            <h3>When your turn becomes active</h3>
-            <ul>
-              <li>You will receive a fixed counselling window shown by an exact countdown timer.</li>
-              <li>Select <strong>one Block A</strong> and <strong>one Block B</strong> elective.</li>
-              <li>Only electives with available seats can be successfully allotted.</li>
-              <li>Review both selections carefully before final confirmation.</li>
-              <li>Do not repeatedly press Confirm or refresh while submission is processing.</li>
-            </ul>
-          </div>
-          <div class="guide-card">
-            <h3>While you are waiting</h3>
-            <ul>
-              <li>Your Hall, Merit Rank, Roll Number and student details are displayed after login.</li>
-              <li>When counselling is running, you can see the current active Merit Rank, students ahead and an approximate wait time.</li>
-              <li>The approximate wait is indicative only and may change depending on earlier students.</li>
-              <li>Live Block A and Block B seat matrices remain visible so you can keep alternative choices ready.</li>
-            </ul>
-          </div>
-          <div class="guide-card">
-            <h3>After final confirmation</h3>
-            <ul>
-              <li>Your confirmed Block A and Block B allotments are shown on screen.</li>
-              <li>A successfully confirmed allotment is treated as final.</li>
-              <li>If an administrator takes control of your counselling, follow the message shown on screen.</li>
-              <li>For a technical problem during your active turn, immediately contact the counselling team at the venue.</li>
-            </ul>
-          </div>
+        <div class="section-head">
+
+          <h2>
+            Understand the two timeslots
+          </h2>
+
+          <p>
+
+            A timeslot is a complete Block A + Block B posting
+            combination. Both electives must belong to the same
+            timeslot.
+
+          </p>
+
         </div>
 
-        <div class="status-grid">
-          <div class="status running"><strong>🟢 COUNSELLING RUNNING</strong>Your queue is active. Waiting students may see an approximate waiting time.</div>
-          <div class="status paused"><strong>🟠 COUNSELLING PAUSED</strong>Stay logged in and wait for the administrator to resume counselling.</div>
-          <div class="status notstarted"><strong>⚪ COUNSELLING NOT STARTED</strong>You may log in and verify your details. Wait for counselling to be started for your Hall.</div>
+
+        <div class="timeslot-grid">
+
+
+          <div class="timeslot-card">
+
+
+            <div class="timeslot-card-header">
+
+              <h3>
+                First Timeslot
+              </h3>
+
+              <p>
+                Block A first · Block B second
+              </p>
+
+            </div>
+
+
+            <div class="timeslot-body">
+
+
+              <div class="posting-row">
+
+                <div class="block-badge">
+                  A
+                </div>
+
+                <div>
+
+                  <strong>
+                    First Posting Period
+                  </strong>
+
+                  <span>
+                    Your selected Block A elective
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div class="posting-row">
+
+                <div class="block-badge">
+                  B
+                </div>
+
+                <div>
+
+                  <strong>
+                    Second Posting Period
+                  </strong>
+
+                  <span>
+                    Your selected Block B elective
+                  </span>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="timeslot-card">
+
+
+            <div class="timeslot-card-header">
+
+              <h3>
+                Second Timeslot
+              </h3>
+
+              <p>
+                Block B first · Block A second
+              </p>
+
+            </div>
+
+
+            <div class="timeslot-body">
+
+
+              <div class="posting-row">
+
+                <div class="block-badge">
+                  B
+                </div>
+
+                <div>
+
+                  <strong>
+                    First Posting Period
+                  </strong>
+
+                  <span>
+                    Your selected Block B elective
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div class="posting-row">
+
+                <div class="block-badge">
+                  A
+                </div>
+
+                <div>
+
+                  <strong>
+                    Second Posting Period
+                  </strong>
+
+                  <span>
+                    Your selected Block A elective
+                  </span>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
         </div>
+
+
+        <div class="timeslot-rule">
+
+          <strong>
+            Important:
+          </strong>
+
+          You cannot mix Block A from First Timeslot
+          with Block B from Second Timeslot, or vice versa.
+
+          Both electives must be available together
+          in the same selected timeslot.
+
+        </div>
+
+
       </div>
+
     </section>
+
+
+
+    <!-- =====================================================
+         WHILE WAITING
+         ===================================================== -->
 
     <section>
+
       <div class="wrap">
-        <div class="section-head"><h2>Hall & Allocation Rules</h2><p>Your Hall is assigned automatically from your Merit Rank.</p></div>
-        <div class="rules">
-          <table>
-            <thead><tr><th>Merit Rank</th><th>Hall</th><th>Selection</th></tr></thead>
-            <tbody>
-              <tr><td>1–126</td><td><strong>Hall 1</strong></td><td>One Block A + one Block B elective</td></tr>
-              <tr><td>127–252</td><td><strong>Hall 2</strong></td><td>One Block A + one Block B elective</td></tr>
-            </tbody>
-          </table>
+
+
+        <div class="section-head">
+
+          <h2>
+            While you are waiting
+          </h2>
+
+          <p>
+
+            The portal keeps you informed so you can prepare
+            your choices before your turn becomes active.
+
+          </p>
+
         </div>
+
+
+        <div class="waiting-grid">
+
+
+          <div class="waiting-card">
+
+            <div class="waiting-icon">
+              🎯
+            </div>
+
+            <h3>
+              Active Merit Rank
+            </h3>
+
+            <p>
+
+              Follow the current counselling rank
+              and your position in the queue.
+
+            </p>
+
+          </div>
+
+
+          <div class="waiting-card">
+
+            <div class="waiting-icon">
+              ⏱️
+            </div>
+
+            <h3>
+              Approximate Wait
+            </h3>
+
+            <p>
+
+              When counselling is running,
+              an estimated wait time is displayed.
+
+            </p>
+
+          </div>
+
+
+          <div class="waiting-card">
+
+            <div class="waiting-icon">
+              📊
+            </div>
+
+            <h3>
+              Live Seat Matrix
+            </h3>
+
+            <p>
+
+              See available seats separately for
+              First Timeslot and Second Timeslot.
+
+            </p>
+
+          </div>
+
+
+          <div class="waiting-card">
+
+            <div class="waiting-icon">
+              🔎
+            </div>
+
+            <h3>
+              Preference Lookup
+            </h3>
+
+            <p>
+
+              When you are within 20 students of your turn,
+              check whether your preferred Block A + B
+              combination is currently available together.
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="notice">
+
+          <strong>
+            Preference lookup does not reserve seats.
+          </strong>
+
+          Availability may change before your turn
+          because students ahead of you may select
+          the same electives.
+
+        </div>
+
+
       </div>
+
     </section>
 
-    <section class="final-cta">
+
+
+    <!-- =====================================================
+         STUDENT JOURNEY
+         ===================================================== -->
+
+    <section class="section-white">
+
       <div class="wrap">
-        <div class="cta-card">
-          <div><h2>Ready for counselling?</h2><p>Open the counselling application and log in using your assigned credentials.</p></div>
-          <a class="btn btn-primary" href="https://script.google.com/macros/s/AKfycbz7EvDBhzSYeYLJJgL_3REZ1oTUnGembUa5cJrNr1y8roYT0qGB9knRoTQ9oxfE9tJd/exec" target="_blank" rel="noopener">OPEN COUNSELLING PORTAL</a>
+
+
+        <div class="section-head">
+
+          <h2>
+            What you should do
+          </h2>
+
+          <p>
+
+            Keep the process simple: prepare before your turn,
+            act carefully during your turn, and verify your final
+            allocation afterward.
+
+          </p>
+
         </div>
+
+
+        <div class="journey-grid">
+
+
+          <div class="journey-card">
+
+            <div class="journey-label">
+              BEFORE YOUR TURN
+            </div>
+
+            <h3>
+              Prepare your preferences
+            </h3>
+
+            <ul>
+
+              <li>
+                Keep your Roll Number and password ready.
+              </li>
+
+              <li>
+                Review multiple Block A and Block B options.
+              </li>
+
+              <li>
+                Use the live seat matrix to keep alternatives ready.
+              </li>
+
+              <li>
+                Keep a stable internet connection and sufficient battery.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="journey-card">
+
+            <div class="journey-label">
+              DURING YOUR TURN
+            </div>
+
+            <h3>
+              Choose carefully
+            </h3>
+
+            <ul>
+
+              <li>
+                Select one complete timeslot.
+              </li>
+
+              <li>
+                Select one Block A and one Block B elective.
+              </li>
+
+              <li>
+                Review both choices before final confirmation.
+              </li>
+
+              <li>
+                Do not refresh or repeatedly press Confirm while submission is processing.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="journey-card">
+
+            <div class="journey-label">
+              AFTER CONFIRMATION
+            </div>
+
+            <h3>
+              Verify your allocation
+            </h3>
+
+            <ul>
+
+              <li>
+                Your final Block A and Block B selections are shown on screen.
+              </li>
+
+              <li>
+                Your posting sequence is displayed according to the selected timeslot.
+              </li>
+
+              <li>
+                A successfully confirmed allocation is treated as final.
+              </li>
+
+              <li>
+                Keep the confirmation visible until you have verified all details.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+
       </div>
+
     </section>
+
+    <!-- =====================================================
+         COUNSELLING STATUS EXPLAINER
+         ===================================================== -->
+
+    <section class="section-soft">
+
+      <div class="wrap">
+
+
+        <div class="section-head">
+
+          <h2>
+            Understand counselling status
+          </h2>
+
+          <p>
+
+            The portal clearly shows whether counselling has
+            not started, is currently running, or has been paused
+            by the counselling team.
+
+          </p>
+
+        </div>
+
+
+        <div class="status-grid">
+
+
+          <div class="status-card status-running">
+
+            <strong>
+              🟢 COUNSELLING RUNNING
+            </strong>
+
+            The merit queue is actively progressing.
+            Keep monitoring your position and seat availability.
+
+          </div>
+
+
+          <div class="status-card status-paused">
+
+            <strong>
+              🟠 COUNSELLING PAUSED
+            </strong>
+
+            The current merit rank is preserved.
+            Wait for the administrator to resume counselling.
+
+          </div>
+
+
+          <div class="status-card status-not-started">
+
+            <strong>
+              ⚪ COUNSELLING NOT STARTED
+            </strong>
+
+            You may log in and verify your details,
+            but no student can make a final allocation yet.
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         IMPORTANT RULES
+         ===================================================== -->
+
+    <section id="rules">
+
+      <div class="wrap">
+
+
+        <div class="section-head">
+
+          <h2>
+            Important counselling rules
+          </h2>
+
+          <p>
+
+            These rules protect merit order, seat accuracy,
+            and fairness throughout the counselling process.
+
+          </p>
+
+        </div>
+
+
+        <div class="rules-card">
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              1
+            </div>
+
+            <div>
+
+              <strong>
+                Counselling proceeds strictly by merit
+              </strong>
+
+              <span>
+
+                Only the student whose merit rank is currently active
+                can complete final counselling.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              2
+            </div>
+
+            <div>
+
+              <strong>
+                Choose one complete timeslot
+              </strong>
+
+              <span>
+
+                Your Block A and Block B electives must both belong
+                to the same selected timeslot.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              3
+            </div>
+
+            <div>
+
+              <strong>
+                Seat availability is live
+              </strong>
+
+              <span>
+
+                Availability can change as students ahead of you
+                complete counselling.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              4
+            </div>
+
+            <div>
+
+              <strong>
+                Preference lookup does not reserve seats
+              </strong>
+
+              <span>
+
+                It is only a planning aid to help you prepare
+                your preferred combination and alternatives.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              5
+            </div>
+
+            <div>
+
+              <strong>
+                Draft selections do not reserve seats
+              </strong>
+
+              <span>
+
+                Seats are consumed only after successful
+                final confirmation by the counselling system.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              6
+            </div>
+
+            <div>
+
+              <strong>
+                Final confirmation is final
+              </strong>
+
+              <span>
+
+                Check the selected timeslot, Block A elective,
+                Block B elective and posting sequence before confirming.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              7
+            </div>
+
+            <div>
+
+              <strong>
+                Do not repeatedly submit
+              </strong>
+
+              <span>
+
+                After pressing final confirmation, wait for the
+                system response. Do not repeatedly press the button
+                or refresh the page while submission is processing.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              8
+            </div>
+
+            <div>
+
+              <strong>
+                Timer expiry does not automatically skip you
+              </strong>
+
+              <span>
+
+                If your counselling timer expires,
+                wait for administrator intervention.
+                Do not attempt to bypass the system.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="rule-row">
+
+            <div class="rule-icon">
+              9
+            </div>
+
+            <div>
+
+              <strong>
+                Administrator intervention may occasionally be required
+              </strong>
+
+              <span>
+
+                In case of a technical or operational issue,
+                the counselling administrator may take temporary control
+                of the active student's counselling.
+
+              </span>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PORTAL CTA
+         ===================================================== -->
+
+    <section
+      id="portal"
+      class="final-cta"
+    >
+
+      <div class="wrap">
+
+
+        <div class="cta-card">
+
+
+          <div>
+
+            <h2>
+              Ready to open the counselling portal?
+            </h2>
+
+            <p>
+
+              Use the official credentials issued to you.
+              Your Roll Number is your User ID.
+
+            </p>
+
+          </div>
+
+
+          <!--
+               IMPORTANT:
+               Replace the href below with the FINAL V3 Apps Script
+               /exec URL only after mock counselling and final testing.
+          -->
+
+          <a
+            class="btn btn-primary"
+            href="https://script.google.com/macros/s/AKfycbz7EvDBhzSYeYLJJgL_3REZ1oTUnGembUa5cJrNr1y8roYT0qGB9knRoTQ9oxfE9tJd/exec"
+            target="_blank"
+            rel="noopener"
+          >
+            OPEN COUNSELLING PORTAL
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
   </main>
 
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
   <footer>
+
     <div class="wrap">
-      <strong>Government Medical College, Patiala</strong><br>
-      Curriculum Committee · Led by Department of General Surgery<br>
-      MBBS Final Year Electives Counselling System
+
+      <strong>
+        Government Medical College, Patiala
+      </strong>
+
+      <br>
+
+      Curriculum Committee
+
+      <br>
+
+      Led by Department of General Surgery
+
+      <br><br>
+
+      MBBS Electives Counselling 2026
+
     </div>
+
   </footer>
+
+
 </body>
+
 </html>
